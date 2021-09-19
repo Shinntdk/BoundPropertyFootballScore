@@ -27,7 +27,9 @@ public class BoundPropertyFootballScore {
            while(true){
                System.out.print("Enter Score ");
                String score = sc.nextLine();
-               mySource.setValue(score);
+               if (score.equals("")){
+                   break;
+               }else mySource.setValue(score);
            }
 
     }
